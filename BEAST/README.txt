@@ -1,0 +1,1 @@
+Please run the provided .xml file in beast and use the output files as input to the R script to recreate the phylogeography map in Fig2C

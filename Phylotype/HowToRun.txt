@@ -1,0 +1,5 @@
+PHYLOTYPE BATCH MODULE
+
+Run this analysis in phylotype with the command « ./pbm.exe -p p_delta_v2.txt »
+
+The parameters file must be duplicated and edited for your own analyses.

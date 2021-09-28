@@ -1,0 +1,35 @@
+#########################
+# PHYLOTYPE PARAMETERS
+#########################
+
+# NAME
+set S(analysisname) DELTA_NEW_V2 ;# name of folder containing all the results 
+
+# TREE and ANNOTATION FILES
+set S(file-tree) new_tree_final.txt ; # the phylogenetic tree, must be rooted (Newick format)
+set S(file-annotation) SA_DeltaRef_10k_metadata.txt ;# the annotations in regards of strains (CVS format)
+set S(variables) {lineage region country division Nextstrain_clade} ;# one or several annotation variable to study (all the values are scanned)
+
+# CRITERIA TRESHOLDS
+set S(criteriathreshold,sz) 5 ;# 3 - Mandatory
+set S(criteriathreshold,ps) 1 ;# 1 - Mandatory
+set S(criteriathreshold,szdf) 1 ;# 1 - Mandatory
+set S(criteriathreshold,df) 0 ;# 1
+set S(criteriathreshold,sl) -1 ;# 0.01
+set S(criteriathreshold,sg) -1 ;# 0.01
+set S(criteriathreshold,dv) -1 ;# 0.02
+set S(criteriathreshold,sldv) 0.2 ;# 2
+set S(criteriathreshold,sgdv) -1 ;# 2
+set S(criteriathreshold,spg) -1 ;# 0.75
+
+# ANCESTRAL ANNOTATION INFERENCE
+set S(aainference) DELTRAN ;# ACCTRAN or DELTRAN
+set S(includingoutroupcheck) 0 ;# 0 or 1
+
+# SHUFFLING PARAMETERS
+set S(shufflingiteration) 100
+set S(pvaltreshold) 10 ;# in regards of S(shufflingiteration), 1% or 5% for instance
+
+# NEW June 2014 tree output with ancestral annotations and node IDs (in place of support values)
+set S(treeoutput) 1 ;# 0 or 1
+
